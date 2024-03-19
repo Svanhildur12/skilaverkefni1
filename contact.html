@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+        .background{
+            background-color: #e8b351;
+        }
+    </style>
+</head>
+
+<body class="font-poppins font-bold background">
+    <nav class="flex justify-between text-4xl p-5">
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./about.html">About</a>
+    </nav>
+   
+    <div class="pt-32 flex justify-center w-full">
+    <form class="font-bold text-3xl text-black">
+        <label for="name" class="">Name</label>
+        <input required id="name" type="text" value="" class="w-full h-12 rounded-md bg-yellow-900"/>
+        
+        <label for="email" class="text-black ">E-mail</label>
+        <input required id="email" type="email" value="" class="w-full h-12 rounded-md bg-yellow-900"/>
+
+        <div class="float-end font-bold text-3xl text-black">
+            <label for="selection" class="">Select</label>  
+        
+            <select required id="selection" class="w-full h-16 bg-yellow-900 text-black text-2xl text-center rounded-md ">
+                <option selected>Select an option</option>
+                <option>General request</option>
+                <option>Resturants</option>
+                <option>Office</option>
+            </select>
+        
+            <label for="Message" class="">Message</label>
+            <textarea required id="Message" name="Message"class="w-full h-48 bg-yellow-900 rounded-md text-2xl text-black" ></textarea>
+        
+            <input class="mt-5 text-2xl bg-yellow-900 text-black rounded-md w-64 h-16 mb-20" type="submit" value="Submit"/>
+        </form>
+
+</body>
+</html>
+
